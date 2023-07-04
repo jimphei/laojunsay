@@ -3,6 +3,9 @@ import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
+    server:{
+        hmr: true
+    },
     plugins: [
         vue({
             template: {
@@ -18,6 +21,12 @@ export default defineConfig({
                 'resources/js/app.js',
             ],
             refresh: true,
+            // refresh: [
+            //     'resources/routes/**',
+            //     'routes/**',
+            //     'resources/js/**',
+            //     'resources/views/**',
+            // ],
         }),
     ],
     resolve: {

@@ -21,4 +21,8 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/author', function () {
+    return response()->json(['name'=>'老俊']);
+});
+
 require __DIR__.'/auth.php';
