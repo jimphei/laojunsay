@@ -1,4 +1,7 @@
 <?php
+use parallel\{Channel, Runtime, Future};
+const THREADS_COUNT = 5;
+const THREADS_I_MAX = 10;
 class AsyncPhp{
 
     public function curl($url)
@@ -84,7 +87,45 @@ class AsyncPhp{
 
         echo "\n总用时",$end-$start."\n";            
     }
+
+    public function testParallel(){        
+        $ch = new Channel();
+        
+        // executed within thread
+        $start=microtime(true); 
+        $task = function (Channel $channel, int $i){
+            $url = 'https://www.baidu.com/?i=';
+            $url = $url.$i;
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $url);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_HEADER, 0);
+            $output = curl_exec($ch);
+            curl_close($ch);
+            // echo $output;
+            echo "第".$i."次访问百度\n";
+            $channel->send($output);           
+            
+        };
+        
+        // creating a few threads
+        $runtimeList = [];
+        for ($i = 0; $i < 5; $i++) {
+            $runtimeList[] = new Runtime();
+        }
+        // run all threads
+        $futureList = [];
+        foreach ($runtimeList as $i => $runtime) {
+            $futureList[] = $runtime->run($task, [$ch, $i]);
+        }
+        
+        $ch->close();
+
+        
+        // echo $queue . PHP_EOL;
+    }
+
 }
 
 $tester = new AsyncPhp();
-$tester->testCurlMulti();
+$tester->testParallel();

@@ -1,0 +1,7 @@
+{
+    "name": "root/asyncphp",
+    "require": {
+        "react/react": "1.x-dev"
+    },
+    "minimum-stability": "dev"
+}
