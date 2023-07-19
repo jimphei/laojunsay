@@ -31,7 +31,7 @@ class AsyncPhp{
         $url = 'https://www.baidu.com/?i=';
         $start=microtime(true); 
         $i=0;
-        while($i<5){
+        while($i<500){
             $pids[$i] = pcntl_fork(); //创建子进程
              if($pids[$i] == 0){
                  $this->curl($url.$i);; //子进程执行代码
@@ -128,4 +128,4 @@ class AsyncPhp{
 }
 
 $tester = new AsyncPhp();
-$tester->testParallel();
+$tester->testAsync();
