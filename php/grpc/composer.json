@@ -1,0 +1,14 @@
+{
+    "name": "root/grpc",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "laojun"
+        }
+    ],
+    "require": {
+        "grpc/grpc": "^1.52",
+        "google/protobuf": "^3.23",
+        "s1lver/grpc-php-plugin-binary": "^1.0.0"
+    }
+}
