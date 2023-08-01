@@ -28,7 +28,6 @@ export default {
     },
     mounted() {
         axios.get('/author').then(res=>{
-            console.log(res)
             this.user = res.data
         })
     },

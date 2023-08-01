@@ -35,12 +35,11 @@ const searchHelper = {
    */
   collectContents: (searchResponseHtml) => {
     // Remove comment identifiers. Used for client-side pagination by the website while loading content.
-    console.log(searchResponseHtml)
     const htmlData = searchResponseHtml.replace(/(<!--|-->)/g, '');
     const $ = cheerio.load(htmlData);
     const collection = [];
     // Go through each search result (200 results) and map them to searchContent model, and add it into collection array.
-    $('[id^=link-index-]').each((_, el) => collection.push(searchContent($(el))));
+    $("[class='h-[125] ']").each((_, el) => collection.push(searchContent($(el))));
 
     return collection;
   },
@@ -51,10 +50,8 @@ const searchHelper = {
    */
   buildFetchUrl: (md5Path) => {
     let path = md5Path;
-
     // TODO: Search results only show MD5 links for now (ref. https://annas-archive.org/datasets#files). This might change in future!!!
     if (!path.startsWith(MD5)) path = MD5 + path;
-
     return new URL(BASE_URI + path);
   },
 

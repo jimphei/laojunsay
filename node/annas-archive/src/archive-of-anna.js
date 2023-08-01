@@ -40,7 +40,9 @@ class ArchiveOfAnna {
   static async fetch_by_md5(md5) {
     const url = searchHelper.buildFetchUrl(md5);
     const response = await axiosHelper.get(url);
-    return searchHelper.getContent(response.data);
+    const result = searchHelper.getContent(response.data);
+    console.log(result)
+    return result;
   }
 }
 
