@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://127.0.0.1:3000/socket.io/socket.io.js"></script>
+    <title>xjd的聊天室</title>
+</head>
+<body>
+    <script>
+        this.socket=io.connect('ws://localhost:3000')  //与刚刚的服务区建立连接，使用的是wx协议
+        this.user={
+            username:'xjd',
+            userid:Date.now()
+        }
+        this.socket.on('message',function(obj)  //监听message行为，会触发里面的function
+        {   
+            console.log(obj);
+        })
+    </script>
+</body>
+</html>
