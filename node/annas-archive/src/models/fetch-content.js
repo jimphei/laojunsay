@@ -1,5 +1,6 @@
 // TODO: Better handling of Mapper required?
 const cheerio = require("../libraries/cheerio-helper");
+const Config = require('../constants')
 
 const mapper = (jsonMetadata) => {
   const fileUnifiedData = jsonMetadata.file_unified_data;
@@ -88,14 +89,15 @@ const fetchContent = (loadedElement) => {
     .find(".mb-6")
     .find(".mb-4")
     .find("a")
-    .each((_, el) => {
-      const href = $(el).attr("href");
-      if (href.startsWith("http")) {
-        links.push({
-          title: $(el).text(),
-          link: href,
-        });
+    .each(async function(i, el){
+      let href = $(this).attr("href");
+      if(href.startsWith('/')){
+        href = Config.BASE_URI + href
       }
+      links.push({
+        title: $(el).text(),
+        link: href,
+      });
     });
   return { coverUrl, format, name, year, author, desc, isbns, links };
   // const rawMetadata = loadedElement.find('.js-technical-details.hidden>div>div:last-child').text();

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+table td {
+	vertical-align: top;
+}
+#message {
+	width: 400px;
+	margin: 0px auto;
+	padding: 10px 20px;
+	text-align: center;	
+	background-color: #0f9d58;
+	color: #fff;
+	border-radius: 3px;
+}
+#info {
+	max-width: 700px;
+	padding: 10px;
+	border: 1px solid #C0C0C0;
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 0.8em;
+}
+#info img {
+	display: block;
+	width: 240px;
+	max-width: 240px;
+	margin: 3px auto;
+}
+#download {
+	text-align: center;
+}
+#download ul {
+	margin: 0.8em 0 0 0;
+}
+#download ul li {
+	display: inline-block;
+}
+#download ul li a {
+	display: block !important;
+	min-width: 5.5em;
+	margin: 0 5px;
+	padding: 4px;
+	border: 1px solid blue;
+	border-radius: 7px;
+	text-decoration: none;
+	text-align: center;
+}
+#download ul li sup>a {
+	width: auto;
+	border: 0;
+}
+.adsbygoogle {
+	margin: 7px;
+}
+</style>
+<script src="/jquery-latest.min.js"></script>
+</head>
+<body>
+<table width="100%" align="center" border="0">
+<tr>
+	<td class="ad"></td>
+	<td id="info">				<div id="download">
+		<h2><a href="http://62.182.86.140/main/2948000/7a3bb8c9113e30d2349956d65dd11afe/%28it-ebooks-2017%29%20it-ebooks%20-%20%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%BC%BA%E7%9A%84%20WordPress%20%E5%88%9D%E7%BA%A7-%E4%B8%AD%E7%BA%A7-%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B-iBooker%20it-ebooks%20%282017%29.pdf">GET</a></h2>
+				<div><em>FASTER</em> Download from an IPFS distributed storage, choose any gateway:</div>
+		<ul>
+		<li><a href="https://cloudflare-ipfs.com/ipfs/bafykbzacecy3cb27uzwbxqil43gav3grol5rn4gq5wuoejxx6ioftgcd7gsra?filename=%28it-ebooks-2017%29%20it-ebooks%20-%20%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%BC%BA%E7%9A%84%20WordPress%20%E5%88%9D%E7%BA%A7-%E4%B8%AD%E7%BA%A7-%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B-iBooker%20it-ebooks%20%282017%29.pdf">Cloudflare</a></li><li><a href="https://gateway.ipfs.io/ipfs/bafykbzacecy3cb27uzwbxqil43gav3grol5rn4gq5wuoejxx6ioftgcd7gsra?filename=%28it-ebooks-2017%29%20it-ebooks%20-%20%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%BC%BA%E7%9A%84%20WordPress%20%E5%88%9D%E7%BA%A7-%E4%B8%AD%E7%BA%A7-%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B-iBooker%20it-ebooks%20%282017%29.pdf">IPFS.io</a></li><li><a href="https://gateway.pinata.cloud/ipfs/bafykbzacecy3cb27uzwbxqil43gav3grol5rn4gq5wuoejxx6ioftgcd7gsra?filename=%28it-ebooks-2017%29%20it-ebooks%20-%20%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%BC%BA%E7%9A%84%20WordPress%20%E5%88%9D%E7%BA%A7-%E4%B8%AD%E7%BA%A7-%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B-iBooker%20it-ebooks%20%282017%29.pdf">Pinata</a></li><li><a href="http://localhost:8080/ipfs/bafykbzacecy3cb27uzwbxqil43gav3grol5rn4gq5wuoejxx6ioftgcd7gsra?filename=%28it-ebooks-2017%29%20it-ebooks%20-%20%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%BC%BA%E7%9A%84%20WordPress%20%E5%88%9D%E7%BA%A7-%E4%B8%AD%E7%BA%A7-%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B-iBooker%20it-ebooks%20%282017%29.pdf">local gateway</a></li>		</ul>
+				<h2><a href="http://libgenfrialc7tguyjywa36vtrdcplwpxaw43h6o63dmmwhvavo5rqqd.onion/LG/02948000/7a3bb8c9113e30d2349956d65dd11afe/%28it-ebooks-2017%29%20it-ebooks%20-%20%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%BC%BA%E7%9A%84%20WordPress%20%E5%88%9D%E7%BA%A7-%E4%B8%AD%E7%BA%A7-%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B-iBooker%20it-ebooks%20%282017%29.pdf">download from the Tor mirror</a><br><span style="font-size:70%">(make sure you're accessing via <a href="https://www.howtogeek.com/272049/how-to-access-.onion-sites-also-known-as-tor-hidden-services/">Tor</a>)</span></h2>
+		</div>
+				<h1>史上最强的 WordPress 初级-中级-高级教程</h1>
+		<div><img src="/covers/2948000/7a3bb8c9113e30d2349956d65dd11afe-g.jpg" alt="cover"></div>
+		<p>Author(s): it-ebooks</p>		<p>Series: it-ebooks-2017</p>		<p>Publisher: iBooker it-ebooks, Year: 2017</p>
+				<p style="text-align:center"><a href="https://www.worldcat.org/search?qt=worldcat_org_bks&q=%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%BC%BA%E7%9A%84%20WordPress%20%E5%88%9D%E7%BA%A7-%E4%B8%AD%E7%BA%A7-%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B&fq=dt%3Abks">Search in WorldCat</a> | <a href="https://www.goodreads.com/search?utf8=✓&query=%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%BC%BA%E7%9A%84%20WordPress%20%E5%88%9D%E7%BA%A7-%E4%B8%AD%E7%BA%A7-%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B">Search in Goodreads</a> | <a href="https://www.abebooks.com/servlet/SearchResults?tn=%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%BC%BA%E7%9A%84%20WordPress%20%E5%88%9D%E7%BA%A7-%E4%B8%AD%E7%BA%A7-%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B&pt=book&cm_sp=pan-_-srp-_-ptbook">Search in AbeBooks</a> | <a href="https://www.amazon.com/s/?url=search-alias%3Dstripbooks&field-keywords=%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%BC%BA%E7%9A%84%20WordPress%20%E5%88%9D%E7%BA%A7-%E4%B8%AD%E7%BA%A7-%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B">Search in Amazon.com</a></p>
+						</td>
+	<td class="ad"></td>
+</tr>
+</table>
+</body>
+</html>

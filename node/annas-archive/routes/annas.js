@@ -22,17 +22,6 @@ router.post("/download", async (req, res, next) => {
   res.end();
 });
 
-router.get("/ws", function (req, res, next) {
-  //只有当前页面可以获得
-  res.io.on("connection", function (socket) {
-    socket.emit("news", {
-      hello: "world",
-    });
-    socket.on("my other event", function (data) {
-      console.log(data);
-    });
-  });
-});
 
 router.get("/test", async (req, res, next) => {
   const url = `https://momot.rs/d1/y/1690991761/30/e/zlib2/pilimi-zlib2-21080000-21179999/21134912~/M0sZx6IzsyqRO6yLqfMXGA/批判性思维与说服性写作-独立思考者的精进

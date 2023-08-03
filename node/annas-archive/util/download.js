@@ -6,10 +6,7 @@ const progressStream = require("progress-stream");
 const processDownload = (url, dirName, fileName, onDownload, onFinish) => {
   if (!fs.existsSync(dirName)) {
     fs.mkdirSync(dirName);
-    console.log("文件夹创建成功");
-  } else {
-    console.log("文件夹已存在");
-  }
+  } 
   let stream = fs
     .createWriteStream(path.join(dirName, fileName))
     .on("error", function (e) {
@@ -41,7 +38,7 @@ const processDownload = (url, dirName, fileName, onDownload, onFinish) => {
       str.on("progress", function (progressData) {
         //不换行输出
         let percentage = Math.round(progressData.percentage) + "%";
-        onDownload(percentage)
+        onDownload(progressData.percentage)
         console.log(percentage);
         // process.stdout.write('\033[2J'+);
         // console.log(progress);

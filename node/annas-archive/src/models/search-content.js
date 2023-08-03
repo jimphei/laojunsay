@@ -19,6 +19,8 @@ const searchContent = (loadedElement) => {
     coverUrl: loadedElement.find('img').attr('src'),
     md5: loadedElement.find('a').attr('href').replace(MD5, ''),
     title: loadedElement.find('h3').text(),
+    year: loadedElement.find('.truncate.text-sm').text(),
+    format: loadedElement.find('.text-gray-500').text()
   };
 };
 

@@ -1,0 +1,4 @@
+<?php
+$str = 'da3eefb2eb2e694da54be426a8b79205/aHR0cHM6Ly9tb21vdC5ycy9kMS95LzE2OTEwOTI5MjQvMzAvZS96bGliMi9waWxpbWktemxpYjItMTc0NzAwMDAtMTc1OTk5OTkvMTc1MjQ2Mzl-L1hYWFhYWFhYWFhYL-WvjOeIuOeIuOept-eIuOeIuC0yMOWRqOW5tOS_ruiuoueJiC3lr4zniLjniLjotKLllYbmlZnogrLns7vliJct576OLee9l-S8r-eJuS3muIXltI4tMjAxNy3lm5vlt53kurrmsJHlh7rniYjnpL4tLWFubmFzLWFyY2hpdmUuZXB1Yg==';
+$result = base64_decode($str);
+var_dump($result);
