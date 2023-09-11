@@ -22,9 +22,8 @@ scoketio.setSocketIo = function (httpServer) {
           io.emit("processing", percentage);
         },
         (fileName) => {
-          detail["storage"] = fileName;
+          detail["storage"] = '/storage/'+ fileName;
           service.saveBook(detail);
-          console.log(fileName);
         }
       );
     });
